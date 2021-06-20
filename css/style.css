@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --heading: #3b1569;
+  --paragraph: #888888;
+  /* ... */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  /* overflow: hidden; */
+  /* scroll-behavior: smooth; */
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+}
+.stick {
+  padding: 5px 100px;
+  background-color: black important!;
+}
+
+.logo {
+  font-size: 1.4375em;
+  font-weight: 600;
+  color: var(--heading);
+}
+#home {
+  background-color: #e9f3ff;
+}
+.title-font {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--heading);
+  letter-spacing: -2px;
+}
+.mb-6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--paragraph);
+  font-style: normal;
+  letter-spacing: -0.2px;
+}
+button {
+  background-color: var(--heading);
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+#Renovations {
+  width: 100px;
+}
+.text-3xl {
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: var(--heading);
+}
+.text-xl {
+  color: var(--heading);
+}
+.goalcus {
+  font-size: 0.625em;
+  font-weight: 400;
+  color: var(--paragraph);
+  letter-spacing: -0.2px;
+  line-height: 1.6em;
+}
+.text-xs {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: var(--heading);
+}
+.text-lg {
+  letter-spacing: -1px;
+  font-size: 1.25em;
+}
+#subtext {
+  font-size: 0.625rem;
+  line-height: 1.6em;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--paragraph);
+}
+
+#power {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--paragraph);
+}
+/* .text-base {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--paragraph);
+} */
+/* .leading-relaxed {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--paragraph);
+} */
+
+/* p {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: var(--paragraph);
+} */
+#goal:after {
+  content: "";
+  display: block;
+  height: 30px;
+  background-image: url(../images/Line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#callus {
+  background-color: #e9f3ff;
+}
+
+/* #callus ::after {
+  content: "";
+  top: 50px;
+  width: 1.5rem;
+  background-color: red;
+} */
+.cusplan {
+  width: max-content;
+  font-size: 0.938em;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  color: var(--heading);
+}
+.cusplans {
+  width: max-content;
+  font-size: 1.563em;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  color: var(--heading);
+}
+.footername {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: var(--paragraph);
+}
+.footeremail {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: var(--heading);
+}
+.footertitle {
+  font-size: 1.125em;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--heading);
+}
+li {
+  font-size: 0.813em;
+  font-weight: 500;
+  color: var(--paragraph);
+}
