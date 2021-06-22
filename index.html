@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
@@ -13,131 +14,132 @@
   </head>
   <body>
     <div class="Main">
-      <!-- This example requires Tailwind CSS v2.0+ -->
-      <!-- <div class="relative bg-white"> -->
-      <div class="mx-auto px-4 sm:px-6">
-        <div
-          class="
-            max-w-6xl
-            flex
-            justify-between
-            items-center
-            py-6
-            md:justify-start
-            md:space-x-10
-          "
-        >
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span class="logo">CompanyHouse</span>
-              <!-- <img
+      <!-- Main Container -->
+      <div class="relative bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div
+            class="
+              flex
+              justify-between
+              items-center
+              py-6
+              md:justify-start
+              md:space-x-10
+            "
+          >
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="#Home">
+                <!-- <span class="logo">CompanyHouse</span> -->
+                <img
                   class="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                  src="./images/CompanyLogo.svg"
                   alt=""
-                /> -->
-            </a>
-          </div>
-          <div class="-mr-2 -my-2 md:hidden">
-            <button
-              class="
-                mobile-menu-button
-                bg-white
-                rounded-md
-                p-2
-                inline-flex
-                items-center
-                justify-center
-                text-gray-400
-                hover:text-gray-500
-                hover:bg-gray-100
-                focus:outline-none
-                focus:ring-2 focus:ring-inset focus:ring-indigo-500
-              "
-              aria-expanded="false"
-            >
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
                 />
-              </svg>
-            </button>
-          </div>
-          <nav class="hidden md:flex space-x-10">
-            <div class="relative">
+              </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
               <button
-                type="button"
                 class="
-                  text-gray-500
-                  group
+                  mobile-menu-button
                   bg-white
                   rounded-md
+                  p-2
                   inline-flex
                   items-center
-                  text-base
-                  font-medium
-                  hover:text-gray-900
+                  justify-center
+                  text-gray-400
+                  hover:text-gray-500
+                  hover:bg-gray-100
                   focus:outline-none
-                  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  focus:ring-2 focus:ring-inset focus:ring-indigo-500
                 "
                 aria-expanded="false"
               >
-                <span>Home</span>
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
               </button>
             </div>
+            <nav class="hidden md:flex space-x-10">
+              <div class="relative">
+                <button
+                  type="button"
+                  class="
+                    text-gray-500
+                    group
+                    bg-white
+                    rounded-md
+                    inline-flex
+                    items-center
+                    text-base
+                    font-medium
+                    hover:text-gray-900
+                    focus:outline-none
+                    focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  "
+                  aria-expanded="false"
+                >
+                  <span>Home</span>
+                </button>
+              </div>
 
-            <a
-              href="#About"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              <a
+                href="#About"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                About
+              </a>
+              <a
+                href="#Services"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Services
+              </a>
+              <a
+                href="#Goal"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Our Goal
+              </a>
+              <a
+                href="#Contactus"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Contact Us
+              </a>
+            </nav>
+            <div
+              class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"
             >
-              About
-            </a>
-            <a
-              href="#Services"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Services
-            </a>
-            <a
-              href="#Goal"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Our Goal
-            </a>
-            <a
-              href="#Contactus"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Contact Us
-            </a>
-          </nav>
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a
-              href="tel:7928655920"
-              class="
-                whitespace-nowrap
-                text-base
-                font-medium
-                text-gray-500
-                hover:text-gray-900
-              "
-            >
-              +44 7928655920
-            </a>
+              <a
+                href="tel:7928655920"
+                class="
+                  whitespace-nowrap
+                  text-base
+                  font-medium
+                  text-gray-500
+                  hover:text-gray-900
+                "
+              >
+                +44 7928655920
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!--
+        <!--
       Mobile menu, show/hide based on mobile menu state.
   
       Entering: "duration-200 ease-out"
@@ -147,122 +149,153 @@
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-      <div
-        class="
-          mobile-menu
-          md:hidden
-          absolute
-          top-0
-          inset-x-0
-          p-2
-          transition
-          transform
-          origin-top-right
-          hidden
-        "
-      >
         <div
           class="
-            rounded-lg
-            shadow-lg
-            ring-1 ring-black ring-opacity-5
-            bg-white
-            divide-y-2 divide-gray-50
+            mobile-menu
+            md:hidden
+            absolute
+            top-0
+            inset-x-0
+            p-2
+            transition
+            transform
+            origin-top-right
+            hidden
           "
         >
-          <div class="pt-5 pb-6 px-5">
-            <div class="flex items-center justify-between">
-              <div>
-                <span class="logo">CompanyHome</span>
+          <div
+            class="
+              rounded-lg
+              shadow-lg
+              ring-1 ring-black ring-opacity-5
+              bg-white
+              divide-y-2 divide-gray-50
+            "
+          >
+            <div class="pt-5 pb-6 px-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <!-- <span class="logo">CompanyHome</span> -->
+                  <img
+                    class="h-8 w-auto sm:h-10"
+                    src="./images/CompanyLogo.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="-mr-2">
+                  <button
+                    type="button"
+                    class="
+                      close
+                      bg-white
+                      rounded-md
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      text-gray-400
+                      hover:text-gray-500
+                      hover:bg-gray-100
+                      focus:outline-none
+                      focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                    "
+                  >
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div class="-mr-2">
-                <button
-                  type="button"
+            </div>
+            <div class="py-6 px-5 space-y-6">
+              <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <a
+                  href="#Home"
                   class="
-                    close
-                    bg-white
-                    rounded-md
-                    p-2
-                    inline-flex
-                    items-center
-                    justify-center
-                    text-gray-400
-                    hover:text-gray-500
-                    hover:bg-gray-100
-                    focus:outline-none
-                    focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                    text-base
+                    font-medium
+                    text-gray-900
+                    hover:text-gray-700
                   "
                 >
-                  <span class="sr-only">Close menu</span>
-                  <!-- Heroicon name: outline/x -->
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="py-6 px-5 space-y-6">
-            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a
-                href="#Home"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Home
-              </a>
-
-              <a
-                href="#About"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                About
-              </a>
-
-              <a
-                href="#Services"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Services
-              </a>
-              <a
-                href="#Goal"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Our Goal
-              </a>
-              <a
-                href="#Contactus"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Contact us
-              </a>
-            </div>
-            <div>
-              <p class="mt-6 text-center text-base font-medium text-gray-500">
-                <a
-                  href="tel:7928655920"
-                  class="text-indigo-600 hover:text-indigo-500"
-                >
-                  +44 7928655920
+                  Home
                 </a>
-              </p>
+
+                <a
+                  href="#About"
+                  class="
+                    text-base
+                    font-medium
+                    text-gray-900
+                    hover:text-gray-700
+                  "
+                >
+                  About
+                </a>
+
+                <a
+                  href="#Services"
+                  class="
+                    text-base
+                    font-medium
+                    text-gray-900
+                    hover:text-gray-700
+                  "
+                >
+                  Services
+                </a>
+                <a
+                  href="#Goal"
+                  class="
+                    text-base
+                    font-medium
+                    text-gray-900
+                    hover:text-gray-700
+                  "
+                >
+                  Our Goal
+                </a>
+                <a
+                  href="#Contactus"
+                  class="
+                    text-base
+                    font-medium
+                    text-gray-900
+                    hover:text-gray-700
+                  "
+                >
+                  Contact us
+                </a>
+              </div>
+              <div>
+                <p class="mt-6 text-center text-base font-medium text-gray-500">
+                  <a
+                    href="tel:7928655920"
+                    class="text-indigo-600 hover:text-indigo-500"
+                  >
+                    +44 7928655920
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
+      <!-- Home Section Start -->
       <section id="Home" class="body-font topnav lg:mt-0 py-10 px-5">
         <div
           id="home"
@@ -307,7 +340,7 @@
               "
             >
               Find The Best Place To Work
-              <!-- <br class="hidden lg:inline-block" />readymade gluten -->
+              <!-- <br class="hidden lg:inline-block" /> -->
             </h1>
             <p class="gsapset mb-6 leading-relaxed">
               We offer inspiring spaces with inviting design, flexible
@@ -341,6 +374,9 @@
           </div>
         </div>
       </section>
+      <!-- Home Section End -->
+
+      <!-- Providing Section Start -->
       <section id="About" class="body-font py-10 px-5">
         <h2 class="text-3xl text-center pb-20 mt-8 mb-6">We are Providing</h2>
 
@@ -377,7 +413,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Renovations.svg"
                   />
@@ -386,13 +422,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Renovations
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 Renovation refers to the process carried out to upgrade an
                 existing structure to improve performance by either altering the
@@ -432,7 +470,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Loft.svg"
                   />
@@ -441,13 +479,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Loft Conversions
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 A loft conversion or an attic conversion is the process of
                 transforming an empty attic space or loft into a functional
@@ -486,7 +526,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Bathroom.svg"
                   />
@@ -495,13 +535,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Bathroom Installations
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 Bathroom fitters install all aspects of bathrooms including
                 showers, baths, sinks, toilets and storage units. Many bathroom
@@ -534,7 +576,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Basement.svg"
                   />
@@ -543,13 +585,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Basement Conversions
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 There are varying degrees of basement conversion from a basic
                 conversion to one that involves excavation and expansion in
@@ -592,7 +636,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Kitchen.svg"
                   />
@@ -601,13 +645,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Spec Kitchen
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 Effective kitchen design is the process of combining layout,
                 surfaces, appliances and design details to form a cooking space
@@ -646,7 +692,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Extensions.svg"
                   />
@@ -655,13 +701,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Home Extensions
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 The type and scale of house extension varies greatly according
                 to the homeowner's requirements, budget and the feasibility of
@@ -699,7 +747,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Paiting.svg"
                   />
@@ -708,13 +756,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Paiting
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 Each of the design elements has special expressive qualities.the
                 simple linear imagery of young children’s drawings and
@@ -748,7 +798,7 @@
                   id="Renovations"
                 >
                   <img
-                    class="object-cover object-center rounded"
+                    class="subani object-cover object-center rounded"
                     alt="hero"
                     src="./images/Plumbing.svg"
                   />
@@ -757,13 +807,15 @@
               <!--/circle-->
 
               <!--/title-->
-              <h2 class="text-xl mt-2 mb-2 leading-relaxed font-semibold">
+              <h2
+                class="text-xl mt-2 mb-2 leading-relaxed subani font-semibold"
+              >
                 Plumbing & Electric
               </h2>
               <!--/title-->
               <p
                 id="subtext"
-                class="text-base text-left items-center leading-6"
+                class="text-base subani text-left items-center leading-6"
               >
                 Install, repair, and maintain pipes, valves, fittings, drainage
                 systems, and fixtures in commercial and residential structures.
@@ -775,6 +827,9 @@
           </div>
         </div>
       </section>
+      <!-- Providing Section End -->
+
+      <!-- Services Section Start -->
       <section id="Services" class="body-font py-10 px-5">
         <div id="home" class="container px-5 py-20 rounded mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
@@ -923,6 +978,9 @@
           </div>
         </div>
       </section>
+      <!-- Services Section End -->
+
+      <!-- Customer Goal Section Start -->
       <section id="Goal" class="py-5 px-5">
         <h2 id="goal" class="text-3xl text-center mt-8">
           Our Goal with customer
@@ -996,6 +1054,9 @@
           </div>
         </div>
       </section>
+      <!-- Customer Goal Section End -->
+
+      <!-- Contact Us Section Start -->
       <section id="Contactus" class="body-font py-10 px-5">
         <div
           id="callus"
@@ -1013,7 +1074,6 @@
         >
           <div
             class="
-              lg:ml-20
               lg:flex-grow
               md:w-1/2
               lg:pr-24
@@ -1107,6 +1167,7 @@
             </div>
           </div>
           <div
+            style="display: contents"
             class="
               lg:max-w-lg
               mb-0
@@ -1116,6 +1177,30 @@
               sm:w-full
             "
           >
+            <div class="flex md:block hidden">
+              <svg
+                style="height: 6em; transform: scaleX(-1) rotate(-5deg)"
+                class="md:block hidden"
+                id="svgarr"
+                viewBox="0 0 196 48"
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.4"
+              >
+                <g stroke="#3b1569">
+                  <path
+                    class="arro"
+                    d="M154 21c6-2 13-4 23 0-13-5-16-8-18-15"
+                  />
+                  <path
+                    class="line"
+                    d="M14 28c29-22 101-5 104 9 1 7-18 7 0-12s53-6 53-6"
+                  />
+                </g>
+              </svg>
+            </div>
             <img
               class="object-cover object-center rounded"
               alt="hero"
@@ -1124,6 +1209,9 @@
           </div>
         </div>
       </section>
+      <!-- Contact Us Section End -->
+
+      <!-- Footer Start -->
       <footer class="text-gray-600 pt-5 px-5 body-font">
         <div
           class="
@@ -1161,27 +1249,37 @@
               "
             >
               <svg
-                width="16"
-                height="25"
-                viewBox="0 0 16 25"
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M8 0L9.12257 3.45492H12.7553L9.81636 5.59017L10.9389 9.04508L8 6.90983L5.06107 9.04508L6.18364 5.59017L3.24472 3.45492H6.87743L8 0Z"
-                  fill="#868686"
-                />
-                <path
-                  d="M2 14.9997L8 10.333L14 14.9997V22.333C14 22.6866 13.8595 23.0258 13.6095 23.2758C13.3594 23.5259 13.0203 23.6663 12.6667 23.6663H3.33333C2.97971 23.6663 2.64057 23.5259 2.39052 23.2758C2.14048 23.0258 2 22.6866 2 22.333V14.9997Z"
-                  stroke="#868686"
-                  stroke-width="1.33333"
+                  d="M15.1344 15.7496V7.11193L8.06718 1.61523L1 7.11193V15.7496"
+                  stroke="#3B1569"
+                  stroke-width="1.57048"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
-                  d="M6 23.6667V17H10V23.6667"
-                  stroke="#868686"
-                  stroke-width="1.33333"
+                  d="M18.5535 12.3838H12.5228H6.49219"
+                  stroke="#3B1569"
+                  stroke-width="1.34613"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.0613 12.3838H7.03066H1"
+                  stroke="#3B1569"
+                  stroke-width="1.34613"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.6441 15.7056V7.06798L12.5769 1.57129L5.50977 7.06798V15.7056"
+                  stroke="#3B1569"
+                  stroke-width="1.57048"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
@@ -1484,24 +1582,12 @@
           </div>
         </div>
       </footer>
+      <!-- Footer End -->
     </div>
+    <!-- Container Main End -->
     <script src="./js/nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script>
-      // let text = gsap.utils.toArray(".gsapset");
-      // text.forEach((el, i) => {
-      //   gsap.from(el, {
-      //     yPercent: 120,
-      //     duration: 1,
-      //     delay: el.classList.contains("gsapset") ? 2 : 1,
-      //     scrollTrigger: {
-      //       trigger: el,
-      //       start: "top center",
-      //       end: "bottom top",
-      //       toggleActions: "restart pause resume reset",
-      //     },
-      //   });
-      // });
       gsap.from(".gsapset", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
       // gsap.from("#subtext", { opacity: 0, duration: 1, y: -50, stagger: 0.2 });
       gsap.from(".gsaphomeimg", { opacity: 0, duration: 1, x: 50 });

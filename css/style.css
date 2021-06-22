@@ -90,6 +90,51 @@ button {
   color: var(--paragraph);
 }
 
+.check {
+  animation: slideup 2s ease;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(200px);
+  }
+  25% {
+    transform: translateY(150px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  75% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arro {
+  stroke-dashoffset: 50;
+  stroke-dasharray: 50;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.line {
+  stroke-dashoffset: 196;
+  stroke-dasharray: 196;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.arros {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 50;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.lines {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 196;
+  transition: stroke-dashoffset 1.2s ease-in-out;
+}
+
 #power {
   font-size: 0.625rem;
   font-weight: 500;

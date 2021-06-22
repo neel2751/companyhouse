@@ -3,6 +3,10 @@ const btn = document.querySelector('.mobile-menu-button');
 const menu = document.querySelector('.mobile-menu');
 const close = document.querySelector('.close');
 const home = document.querySelector(".topnav");
+const leading = document.getElementsByClassName('subani');
+
+const line = document.querySelector(".line");
+const arr = document.querySelector(".arro");
 
 
 btn.addEventListener("click", () => {
@@ -17,27 +21,30 @@ close.addEventListener("click", () => {
 });
 
 
-// window.addEventListener('scroll',() => {
-//     console.log(window.scrollY);
+function set() {
+    console.log(this.scrollY);
 
-// //    var navbar = document.querySelector('.navbar');
-// //    navbar.classList.toggle('stick', window.scrollY > 0);
-// });
-// const menu = document.getElementById("close");
-// // const ulMenu = document.getElementById("close");
+    // if (this.scrollY > 350 && this.scrollY > 400){
+        if(this.scrollY > 2200 && this.scrollY < 2500){
+        for (i = 0; i < leading.length; i++) {
+            leading[i].classList.add("check");
+          }
+    arr.classList.add("arros");
+    arr.classList.remove("arro");
 
-// function menuToggle() {
-//     menu.classList.toggle('h-32')
-// }
+    line.classList.add("lines");
+    line.classList.remove("line");
+    }
+    else{
+        for (i = 0; i < leading.length; i++) {
+            leading[i].classList.remove("check");
+          }
+          arr.classList.remove("arros");
+    arr.classList.add("arro");
 
-// // Browser resize listener
-// window.addEventListener("resize", menuResize);
+    line.classList.remove("lines");
+    line.classList.add("line");
+    }
+  }
 
-// // Rezise menu if user changing the width with responsive menu opened
-// function menuResize() {
-//     // first get the size from the window
-//     const window_size = window.innerWidth || document.body.clientWidth;
-//     if (window_size > 640){
-//         menu.classList.remove('h-32');
-//     }
-// }
+  window.addEventListener("scroll", set);
