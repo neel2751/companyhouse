@@ -113,6 +113,28 @@ button {
   }
 }
 
+.fic {
+  stroke-dashoffset: 247;
+  stroke-dasharray: 247;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.sec {
+  stroke-dashoffset: 296;
+  stroke-dasharray: 296;
+  transition: stroke-dashoffset 1.8s ease-in-out;
+}
+/* scroll */
+.fics {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 247;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.secs {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 296;
+  transition: stroke-dashoffset 1.8s ease-in-out;
+}
+
 .arro {
   stroke-dashoffset: 50;
   stroke-dasharray: 50;

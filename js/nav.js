@@ -5,8 +5,12 @@ const close = document.querySelector('.close');
 const home = document.querySelector(".topnav");
 const leading = document.getElementsByClassName('subani');
 
+const firstcircle = document.querySelector(".fic");
+const secondcircle = document.querySelector(".sec");
+
 const line = document.querySelector(".line");
 const arr = document.querySelector(".arro");
+
 
 
 btn.addEventListener("click", () => {
@@ -25,20 +29,30 @@ function set() {
     console.log(this.scrollY);
 
     // if (this.scrollY > 350 && this.scrollY > 400){
-        if(this.scrollY > 2200 && this.scrollY < 2500){
-        for (i = 0; i < leading.length; i++) {
-            leading[i].classList.add("check");
-          }
-    arr.classList.add("arros");
-    arr.classList.remove("arro");
+        if((this.scrollY > 2200 && this.scrollY < 2500) ||(this.scrollY >4425 && this.scrollY < 5000)){
+        // for (i = 0; i < leading.length; i++) {
+        //     leading[i].classList.add("check");
+        //   }
+        firstcircle.classList.add("fics");
+        firstcircle.classList.remove("fic");
+    
+        secondcircle.classList.add("secs");
+        secondcircle.classList.remove("sec");
+        arr.classList.add("arros");
+        arr.classList.remove("arro");
 
-    line.classList.add("lines");
-    line.classList.remove("line");
+        line.classList.add("lines");
+        line.classList.remove("line");
     }
     else{
-        for (i = 0; i < leading.length; i++) {
-            leading[i].classList.remove("check");
-          }
+        // for (i = 0; i < leading.length; i++) {
+        //     leading[i].classList.remove("check");
+        //   }
+          firstcircle.classList.remove("fics");
+    firstcircle.classList.add("fic");
+
+    secondcircle.classList.remove("secs");
+    secondcircle.classList.add("sec");
           arr.classList.remove("arros");
     arr.classList.add("arro");
 
