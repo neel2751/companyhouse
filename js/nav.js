@@ -26,7 +26,7 @@ close.addEventListener("click", () => {
 
 
 function set() {
-    console.log(this.scrollY);
+    // console.log(this.scrollY);
 
     // if (this.scrollY > 350 && this.scrollY > 400){
         if((this.scrollY > 2450 && this.scrollY < 2900) ||(this.scrollY >5400 && this.scrollY < 6000)){
