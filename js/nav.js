@@ -29,7 +29,7 @@ function set() {
     console.log(this.scrollY);
 
     // if (this.scrollY > 350 && this.scrollY > 400){
-        if((this.scrollY > 2200 && this.scrollY < 2600) ||(this.scrollY >4425 && this.scrollY < 5000)){
+        if((this.scrollY > 2450 && this.scrollY < 2900) ||(this.scrollY >5400 && this.scrollY < 6000)){
         // for (i = 0; i < leading.length; i++) {
         //     leading[i].classList.add("check");
         //   }
