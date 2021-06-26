@@ -133,6 +133,17 @@ button {
   stroke-dasharray: 196;
   transition: stroke-dashoffset 1.2s ease-in-out;
 }
+/* for new lottile svg */
+.svg {
+  width: 200px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+/* svg lottile finish */
 
 #power {
   font-size: 0.625rem;

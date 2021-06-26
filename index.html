@@ -348,8 +348,10 @@
               and genuine experiences, for the thriving business and
               professionals.
             </p>
+            <div class="svg hide" id="svg"></div>
             <div class="flex justify-center">
               <button
+                id="button"
                 class="
                   gsapset
                   inline-flex
@@ -1804,7 +1806,29 @@
     </div>
     <!-- Container Main End -->
     <script src="./js/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script>
+      const play = document.getElementById("button");
+
+      const svgContainer = document.getElementById("svg");
+      const animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: "svg",
+        loop: false,
+        autoplay: false,
+        path: "https://assets2.lottiefiles.com/packages/lf20_u4yrau.json",
+      });
+
+      play.addEventListener("click", () => {
+        svgContainer.classList.remove("hide");
+        animItem.goToAndPlay(0, true);
+      });
+
+      animItem.addEventListener("complete", () => {
+        svgContainer.classList.add("hide");
+      });
+    </script>
     <script>
       gsap.from(".gsapset", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
       // gsap.from("#subtext", { opacity: 0, duration: 1, y: -50, stagger: 0.2 });
